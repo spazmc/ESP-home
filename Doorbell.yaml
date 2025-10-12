@@ -11,11 +11,11 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "VOm7aGHusYd3NjvxyC2J0gb1LVz0daOY3AcP9tzrAvA="
+    key: "your key"
 
 ota:
   - platform: esphome
-    password: "3b2a5b8bf1c6aee68e0449f44cfb108d"
+    password: "esphome password"
 
 wifi:
   ssid: !secret wifi_ssid
@@ -23,15 +23,15 @@ wifi:
 
   # Optional manual IP
   manual_ip:
-    static_ip: 192.168.6.11
-    gateway: 192.168.6.1
-    subnet: 255.255.255.0
-    dns1: 192.168.6.1
+    static_ip:
+    gateway: 
+    subnet:
+    dns1: 
     
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Doorbell Fallback Hotspot"
-    password: "4dcbbbjhA41V"
+    password: "fall back password"
 
 captive_portal:
 
